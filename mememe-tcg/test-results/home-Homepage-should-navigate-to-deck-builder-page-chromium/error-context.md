@@ -1,0 +1,48 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8] [cursor=pointer]
+  - navigation [ref=e11]:
+    - generic [ref=e13]:
+      - link "めめめのくらげ TCG" [ref=e15] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e16]:
+        - link "カードコレクション" [ref=e17] [cursor=pointer]:
+          - /url: /collection/
+        - link "デッキビルダー" [ref=e18] [cursor=pointer]:
+          - /url: /deck-builder/
+        - link "対戦" [ref=e19] [cursor=pointer]:
+          - /url: /game/
+  - main [ref=e20]:
+    - generic [ref=e22]:
+      - heading "めめめのくらげ TCG" [level=1] [ref=e23]
+      - paragraph [ref=e24]:
+        - text: 「めめめのくらげ」に登場するふれんど（キャラクター）を使用した
+        - text: 1対1の対戦型トレーディングカードゲーム
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - heading "コレクション" [level=2] [ref=e27]
+          - paragraph [ref=e28]: 全カードを閲覧し、お気に入りを見つけよう
+          - link "カードを見る" [ref=e29] [cursor=pointer]:
+            - /url: /collection/
+        - generic [ref=e30]:
+          - heading "デッキ構築" [level=2] [ref=e31]
+          - paragraph [ref=e32]: 50枚のカードで最強のデッキを作ろう
+          - link "デッキを作る" [active] [ref=e33] [cursor=pointer]:
+            - /url: /deck-builder/
+        - generic [ref=e34]:
+          - heading "対戦" [level=2] [ref=e35]
+          - paragraph [ref=e36]: 作ったデッキで勝負を挑もう
+          - link "対戦を始める" [ref=e37] [cursor=pointer]:
+            - /url: /game/
+      - generic [ref=e38]:
+        - heading "ゲームルール" [level=3] [ref=e39]
+        - list [ref=e40]:
+          - listitem [ref=e41]: • デッキは正確に50枚で構築
+          - listitem [ref=e42]: • 同じカード番号のカードは4枚まで
+          - listitem [ref=e43]: • ふれんど、サポート、フィールドの3種類のカード
+          - listitem [ref=e44]: • 勝利条件：相手の負のエネルギーエリアに7枚カードを置く、または相手のデッキを0枚にする
+  - alert [ref=e45]
+```
