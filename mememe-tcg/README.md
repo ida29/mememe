@@ -4,7 +4,7 @@
 
 ## 🎮 デモ
 
-[GitHub Pagesでプレイ](https://yourusername.github.io/mememe-tcg)
+[GitHub Pagesでプレイ](https://ida29.github.io/mememe/mememe-tcg)
 
 ## ✨ 機能
 
