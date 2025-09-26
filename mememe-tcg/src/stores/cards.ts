@@ -67,7 +67,9 @@ export const useCardsStore = create<CardsState>((set, get) => ({
   loadCards: async () => {
     set({ isLoading: true, error: null });
     try {
-      const response = await fetch('/data/mememe_cards_complete.json');
+      // GitHub Pages用にbasePathを考慮
+      const basePath = process.env.NODE_ENV === 'production' ? '/mememe' : '';
+      const response = await fetch(`${basePath}/data/mememe_cards_complete.json`);
       if (!response.ok) {
         throw new Error('カードデータの読み込みに失敗しました');
       }
