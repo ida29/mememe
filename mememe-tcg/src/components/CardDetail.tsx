@@ -46,31 +46,39 @@ export default function CardDetail({ card, onClose }: CardDetailProps) {
               <p><span className="text-gray-400">カード番号:</span> {card.cardNo}</p>
               <p><span className="text-gray-400">タイプ:</span> {card.type}</p>
               <p><span className="text-gray-400">色:</span> {card.color}</p>
-              {card.level && (
-                <p><span className="text-gray-400">レベル:</span> {card.level}</p>
+              {card.attribute && (
+                <p><span className="text-gray-400">属性:</span> {card.attribute}</p>
               )}
-              {card.cost !== undefined && (
-                <p><span className="text-gray-400">コスト:</span> {card.cost}</p>
+              {card.emotion && (
+                <p><span className="text-gray-400">感情:</span> {card.emotion}</p>
+              )}
+              {card.cost && (
+                <div>
+                  <p><span className="text-gray-400">コスト:</span> {card.cost.total}</p>
+                  {(card.cost.red > 0 || card.cost.blue > 0 || card.cost.yellow > 0 || card.cost.green > 0) && (
+                    <p className="text-sm text-gray-300">
+                      赤:{card.cost.red} 青:{card.cost.blue} 黄:{card.cost.yellow} 緑:{card.cost.green}
+                    </p>
+                  )}
+                </div>
               )}
               {card.power !== undefined && (
                 <p><span className="text-gray-400">パワー:</span> {card.power}</p>
               )}
               <p><span className="text-gray-400">レアリティ:</span> {card.rarity}</p>
-              {card.abilities && card.abilities.length > 0 && (
+              {card.ability && (
                 <div>
-                  <p className="text-gray-400">能力:</p>
-                  <ul className="ml-4 space-y-1">
-                    {card.abilities.map((ability, index) => (
-                      <li key={index} className="text-sm">{ability}</li>
-                    ))}
-                  </ul>
+                  <p className="text-gray-400 mb-2">能力:</p>
+                  <div className="text-sm bg-gray-800 rounded p-2">
+                    {card.ability}
+                  </div>
                 </div>
               )}
-              {card.flavorText && (
-                <div>
-                  <p className="text-gray-400">フレーバーテキスト:</p>
-                  <p className="italic text-sm ml-4">{card.flavorText}</p>
-                </div>
+              {card.is_promo && (
+                <p className="text-yellow-400">プロモカード</p>
+              )}
+              {card.is_parallel && (
+                <p className="text-purple-400">パラレルカード</p>
               )}
             </div>
             {onClose && (

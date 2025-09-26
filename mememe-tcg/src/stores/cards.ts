@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Card, CardType, CardColor, CardRarity } from '@/types/card';
+import { Card, CardType, CardColor, CardRarity, RawCardData, transformRawCardData } from '@/types/card';
 
 interface CardFilters {
   searchTerm: string;
@@ -80,8 +80,12 @@ export const useCardsStore = create<CardsState>((set, get) => ({
       if (!response.ok) {
         throw new Error(`カードデータの読み込みに失敗しました: ${response.status} ${response.statusText}`);
       }
-      const cards = await response.json();
-      console.log('Cards loaded:', cards.length);
+      const rawCards: RawCardData[] = await response.json();
+      console.log('Raw cards loaded:', rawCards.length);
+
+      // RawCardDataをCardに変換
+      const cards: Card[] = rawCards.map(transformRawCardData);
+      console.log('Cards transformed:', cards.length);
 
       set(state => ({
         cards,

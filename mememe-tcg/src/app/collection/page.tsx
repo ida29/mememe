@@ -22,10 +22,23 @@ export default function CollectionPage() {
   } = useCardsStore();
 
   useEffect(() => {
+    console.log('Collection page useEffect - cards.length:', cards.length, 'isLoading:', isLoading);
     if (cards.length === 0 && !isLoading) {
       console.log('Loading cards from collection page');
       loadCards();
     }
+  }, [cards.length, isLoading, loadCards]);
+
+  // コンポーネントマウント時に強制的にロード
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (cards.length === 0 && !isLoading) {
+        console.log('Force loading cards after mount');
+        loadCards();
+      }
+    }, 100);
+
+    return () => clearTimeout(timer);
   }, [cards.length, isLoading, loadCards]);
 
   const handleCardClick = (card: Card) => {
