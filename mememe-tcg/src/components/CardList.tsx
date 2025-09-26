@@ -18,7 +18,9 @@ export default function CardList({ cards, onCardClick, className = '' }: CardLis
       'スーパーレア': 'SR'
     };
     const rarityCode = rarityMap[rarity] || 'C';
-    return `/images/cards/${cardNo}_${rarityCode}.jpg`;
+    // GitHub Pages用にbasePathを考慮
+    const basePath = typeof window !== 'undefined' && window.location.pathname.includes('/mememe') ? '/mememe' : '';
+    return `${basePath}/images/cards/${cardNo}_${rarityCode}.jpg`;
   };
 
   return (

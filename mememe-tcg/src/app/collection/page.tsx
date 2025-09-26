@@ -2,13 +2,12 @@
 
 import { useEffect, useState } from 'react';
 import { useCardsStore } from '@/stores/cards';
-import CardList from '@/components/CardList';
+import LazyCardList from '@/components/LazyCardList';
 import CardDetail from '@/components/CardDetail';
 import { Card } from '@/types/card';
 
 export default function CollectionPage() {
   const [selectedCard, setSelectedCard] = useState<Card | null>(null);
-  const [displayCount, setDisplayCount] = useState(24);
 
   const {
     cards,
@@ -23,20 +22,11 @@ export default function CollectionPage() {
   } = useCardsStore();
 
   useEffect(() => {
-    if (cards.length === 0) {
+    if (cards.length === 0 && !isLoading) {
+      console.log('Loading cards from collection page');
       loadCards();
     }
-  }, [cards.length, loadCards]);
-
-  useEffect(() => {
-    setDisplayCount(24);
-  }, [filteredCards]);
-
-  const displayedCards = filteredCards.slice(0, displayCount);
-
-  const loadMore = () => {
-    setDisplayCount(prevCount => Math.min(prevCount + 24, filteredCards.length));
-  };
+  }, [cards.length, isLoading, loadCards]);
 
   const handleCardClick = (card: Card) => {
     setSelectedCard(card);
@@ -100,21 +90,12 @@ export default function CollectionPage() {
         </div>
       </div>
 
-      <CardList
-        cards={displayedCards}
+      <LazyCardList
+        cards={filteredCards}
         onCardClick={handleCardClick}
+        initialLoadCount={24}
+        loadMoreCount={12}
       />
-
-      {displayedCards.length < filteredCards.length && (
-        <div className="mt-8 text-center">
-          <button
-            onClick={loadMore}
-            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors"
-          >
-            もっと見る ({displayedCards.length} / {filteredCards.length})
-          </button>
-        </div>
-      )}
 
       {selectedCard && (
         <CardDetail

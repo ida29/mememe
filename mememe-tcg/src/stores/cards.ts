@@ -73,17 +73,23 @@ export const useCardsStore = create<CardsState>((set, get) => ({
       if (typeof window !== 'undefined' && window.location.pathname.includes('/mememe')) {
         basePath = '/mememe';
       }
-      const response = await fetch(`${basePath}/data/mememe_cards_complete.json`);
+      const url = `${basePath}/data/mememe_cards_complete.json`;
+      console.log('Fetching cards from:', url);
+
+      const response = await fetch(url);
       if (!response.ok) {
-        throw new Error('カードデータの読み込みに失敗しました');
+        throw new Error(`カードデータの読み込みに失敗しました: ${response.status} ${response.statusText}`);
       }
       const cards = await response.json();
+      console.log('Cards loaded:', cards.length);
+
       set(state => ({
         cards,
         filteredCards: applyFilters(cards, state.filters),
         isLoading: false,
       }));
     } catch (error) {
+      console.error('Error loading cards:', error);
       set({
         error: error instanceof Error ? error.message : '不明なエラーが発生しました',
         isLoading: false,
