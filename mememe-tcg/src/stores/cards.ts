@@ -67,25 +67,39 @@ export const useCardsStore = create<CardsState>((set, get) => ({
   loadCards: async () => {
     set({ isLoading: true, error: null });
     try {
-      // GitHub Pages用にbasePathを考慮
-      // window.location.pathnameでサブパスでのホスティングを検出
-      let basePath = '';
-      if (typeof window !== 'undefined' && window.location.pathname.includes('/mememe')) {
-        basePath = '/mememe';
+      // GitHub Pages用に絶対URLを構築
+      let url;
+      if (typeof window !== 'undefined') {
+        const { protocol, hostname, pathname } = window.location;
+        console.log('Location info:', { protocol, hostname, pathname });
+
+        if (hostname === 'ida29.github.io' && pathname.includes('/mememe')) {
+          url = `${protocol}//${hostname}/mememe/data/mememe_cards_complete.json`;
+        } else {
+          url = '/data/mememe_cards_complete.json';
+        }
+      } else {
+        url = '/data/mememe_cards_complete.json';
       }
-      const url = `${basePath}/data/mememe_cards_complete.json`;
       console.log('Fetching cards from:', url);
 
       const response = await fetch(url);
+      console.log('Fetch response:', response.status, response.statusText);
+
       if (!response.ok) {
-        throw new Error(`カードデータの読み込みに失敗しました: ${response.status} ${response.statusText}`);
+        throw new Error(`カードデータの読み込みに失敗しました: ${response.status} ${response.statusText} - URL: ${url}`);
       }
+
       const rawCards: RawCardData[] = await response.json();
-      console.log('Raw cards loaded:', rawCards.length);
+      console.log('Raw cards loaded:', rawCards.length, rawCards[0] ? 'First card:' : 'No cards', rawCards[0]);
+
+      if (!Array.isArray(rawCards) || rawCards.length === 0) {
+        throw new Error(`カードデータが空またはJSON形式が正しくありません - データ: ${JSON.stringify(rawCards).substring(0, 100)}`);
+      }
 
       // RawCardDataをCardに変換
       const cards: Card[] = rawCards.map(transformRawCardData);
-      console.log('Cards transformed:', cards.length);
+      console.log('Cards transformed:', cards.length, 'First transformed card:', cards[0]);
 
       set(state => ({
         cards,

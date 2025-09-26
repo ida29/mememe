@@ -5,9 +5,11 @@ import { useCardsStore } from '@/stores/cards';
 import LazyCardList from '@/components/LazyCardList';
 import CardDetail from '@/components/CardDetail';
 import { Card } from '@/types/card';
+import { useClientSideInit } from '@/hooks/useClientSideInit';
 
 export default function CollectionPage() {
   const [selectedCard, setSelectedCard] = useState<Card | null>(null);
+  const isClient = useClientSideInit();
 
   const {
     cards,
@@ -21,29 +23,29 @@ export default function CollectionPage() {
     setColorFilter,
   } = useCardsStore();
 
+  // クライアントサイドでのみカードを読み込み
   useEffect(() => {
-    console.log('Collection page useEffect - cards.length:', cards.length, 'isLoading:', isLoading);
+    if (!isClient) return;
+
+    console.log('Client-side init - cards.length:', cards.length, 'isLoading:', isLoading);
     if (cards.length === 0 && !isLoading) {
-      console.log('Loading cards from collection page');
+      console.log('Loading cards from client-side');
       loadCards();
     }
-  }, [cards.length, isLoading, loadCards]);
-
-  // コンポーネントマウント時に強制的にロード
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (cards.length === 0 && !isLoading) {
-        console.log('Force loading cards after mount');
-        loadCards();
-      }
-    }, 100);
-
-    return () => clearTimeout(timer);
-  }, [cards.length, isLoading, loadCards]);
+  }, [isClient, cards.length, isLoading, loadCards]);
 
   const handleCardClick = (card: Card) => {
     setSelectedCard(card);
   };
+
+  // クライアントサイド初期化待ち
+  if (!isClient) {
+    return (
+      <div className="min-h-screen text-white flex items-center justify-center">
+        <div className="text-2xl">初期化中...</div>
+      </div>
+    );
+  }
 
   if (isLoading) {
     return (
