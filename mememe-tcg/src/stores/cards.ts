@@ -69,7 +69,10 @@ export const useCardsStore = create<CardsState>((set, get) => ({
     try {
       // GitHub Pages用にbasePathを考慮
       // window.location.pathnameでサブパスでのホスティングを検出
-      const basePath = window.location.pathname.includes('/mememe') ? '/mememe' : '';
+      let basePath = '';
+      if (typeof window !== 'undefined' && window.location.pathname.includes('/mememe')) {
+        basePath = '/mememe';
+      }
       const response = await fetch(`${basePath}/data/mememe_cards_complete.json`);
       if (!response.ok) {
         throw new Error('カードデータの読み込みに失敗しました');
