@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import { Card } from '@/types/card';
+import { getCardImagePath } from '@/utils/imageUtils';
+import { useState } from 'react';
 
 interface CardListProps {
   cards: Card[];
@@ -10,17 +12,11 @@ interface CardListProps {
 }
 
 export default function CardList({ cards, onCardClick, className = '' }: CardListProps) {
-  const getCardImagePath = (cardNo: string, rarity: string) => {
-    const rarityMap: { [key: string]: string } = {
-      'コモン': 'C',
-      'アンコモン': 'U',
-      'レア': 'R',
-      'スーパーレア': 'SR'
-    };
-    const rarityCode = rarityMap[rarity] || 'C';
-    // GitHub Pages用にbasePathを考慮
-    const basePath = typeof window !== 'undefined' && window.location.pathname.includes('/mememe') ? '/mememe' : '';
-    return `${basePath}/images/cards/${cardNo}_${rarityCode}.jpg`;
+  const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
+
+  const handleImageError = (cardNo: string) => {
+    setImageErrors(prev => ({ ...prev, [cardNo]: true }));
+    console.error(`Failed to load image for card: ${cardNo}`);
   };
 
   return (
@@ -32,14 +28,24 @@ export default function CardList({ cards, onCardClick, className = '' }: CardLis
           className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg overflow-hidden cursor-pointer hover:bg-opacity-20 transition-all hover:scale-105"
         >
           <div className="relative aspect-[2/3]">
-            <Image
-              src={getCardImagePath(card.cardNo, card.rarity)}
-              alt={card.name}
-              fill
-              className="object-cover"
-              sizes="(max-width: 640px) 50vw, (max-width: 768px) 25vw, 16.66vw"
-              loading="lazy"
-            />
+            {imageErrors[card.cardNo] ? (
+              <div className="w-full h-full flex items-center justify-center bg-gray-800">
+                <div className="text-center p-4">
+                  <p className="text-gray-400 text-xs">画像読み込みエラー</p>
+                  <p className="text-white text-sm mt-1">{card.name}</p>
+                </div>
+              </div>
+            ) : (
+              <Image
+                src={getCardImagePath(card.cardNo, card.rarity)}
+                alt={card.name}
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 50vw, (max-width: 768px) 25vw, 16.66vw"
+                loading="lazy"
+                onError={() => handleImageError(card.cardNo)}
+              />
+            )}
           </div>
           <div className="p-2">
             <p className="text-xs text-gray-300">{card.cardNo}</p>

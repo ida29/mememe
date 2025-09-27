@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import { Card } from '@/types/card';
+import { getCardImagePath } from '@/utils/imageUtils';
+import { useState } from 'react';
 
 interface CardDetailProps {
   card: Card;
@@ -9,16 +11,7 @@ interface CardDetailProps {
 }
 
 export default function CardDetail({ card, onClose }: CardDetailProps) {
-  const getCardImagePath = (cardNo: string, rarity: string) => {
-    const rarityMap: { [key: string]: string } = {
-      'コモン': 'C',
-      'アンコモン': 'U',
-      'レア': 'R',
-      'スーパーレア': 'SR'
-    };
-    const rarityCode = rarityMap[rarity] || 'C';
-    return `/images/cards/${cardNo}_${rarityCode}.jpg`;
-  };
+  const [imageError, setImageError] = useState(false);
 
   return (
     <div
@@ -31,14 +24,28 @@ export default function CardDetail({ card, onClose }: CardDetailProps) {
       >
         <div className="flex flex-col md:flex-row gap-6">
           <div className="relative w-full md:w-80 aspect-[2/3]">
-            <Image
-              src={getCardImagePath(card.cardNo, card.rarity)}
-              alt={card.name}
-              fill
-              className="object-contain"
-              sizes="320px"
-              priority
-            />
+            {imageError ? (
+              <div className="w-full h-full flex items-center justify-center bg-gray-800 rounded-lg">
+                <div className="text-center p-4">
+                  <p className="text-gray-400">画像読み込みエラー</p>
+                  <p className="text-white text-lg mt-2">{card.name}</p>
+                  <p className="text-gray-500 text-sm mt-1">{card.cardNo}</p>
+                </div>
+              </div>
+            ) : (
+              <Image
+                src={getCardImagePath(card.cardNo, card.rarity)}
+                alt={card.name}
+                fill
+                className="object-contain"
+                sizes="320px"
+                priority
+                onError={() => {
+                  setImageError(true);
+                  console.error(`Failed to load detail image for card: ${card.cardNo}`);
+                }}
+              />
+            )}
           </div>
           <div className="flex-1 text-white">
             <h2 className="text-2xl font-bold mb-4">{card.name}</h2>
