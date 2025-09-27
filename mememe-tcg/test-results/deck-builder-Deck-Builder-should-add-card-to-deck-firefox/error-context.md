@@ -1,0 +1,793 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8] [cursor=pointer]
+  - navigation [ref=e12]:
+    - generic [ref=e14]:
+      - link "めめめのくらげ TCG" [ref=e16] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e17]:
+        - link "カードコレクション" [ref=e18] [cursor=pointer]:
+          - /url: /collection/
+        - link "デッキビルダー" [ref=e19] [cursor=pointer]:
+          - /url: /deck-builder/
+        - link "対戦" [ref=e20] [cursor=pointer]:
+          - /url: /game/
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - button "← デッキ一覧に戻る" [ref=e24]
+        - heading "カード追加テスト" [level=1] [ref=e25]
+        - generic [ref=e26]: 0/50枚
+      - generic [ref=e27]:
+        - generic [ref=e29]:
+          - heading "デッキ内容" [level=2] [ref=e30]
+          - paragraph [ref=e32]: "デッキは正確に50枚でなければなりません（現在: 0枚）"
+          - paragraph [ref=e34]: ふれんどカードが少なすぎる可能性があります
+          - paragraph [ref=e36]: カードを選択してデッキに追加してください
+        - generic [ref=e38]:
+          - heading "カード選択" [level=2] [ref=e39]
+          - generic [ref=e40]:
+            - textbox "カード名・番号で検索..." [ref=e41]
+            - combobox [ref=e42]:
+              - option "すべてのタイプ" [selected]
+              - option "ふれんど"
+              - option "サポート"
+              - option "フィールド"
+            - combobox [ref=e43]:
+              - option "すべての色" [selected]
+              - option "赤"
+              - option "青"
+              - option "緑"
+              - option "黄"
+              - option "紫"
+              - option "無色"
+          - generic [ref=e45]:
+            - generic [ref=e46] [cursor=pointer]:
+              - img "るくそー" [ref=e48] [cursor=pointer]
+              - generic [ref=e49] [cursor=pointer]:
+                - paragraph [ref=e50] [cursor=pointer]: F-013 (P)
+                - paragraph [ref=e51] [cursor=pointer]: るくそー
+                - paragraph [ref=e52] [cursor=pointer]: ふれんど
+            - generic [ref=e53] [cursor=pointer]:
+              - img "ティラノちゃん" [ref=e55] [cursor=pointer]
+              - generic [ref=e56] [cursor=pointer]:
+                - paragraph [ref=e57] [cursor=pointer]: F-015 (P)
+                - paragraph [ref=e58] [cursor=pointer]: ティラノちゃん
+                - paragraph [ref=e59] [cursor=pointer]: ふれんど
+            - generic [ref=e60] [cursor=pointer]:
+              - img "くらげ坊" [ref=e62] [cursor=pointer]
+              - generic [ref=e63] [cursor=pointer]:
+                - paragraph [ref=e64] [cursor=pointer]: F-016 (P)
+                - paragraph [ref=e65] [cursor=pointer]: くらげ坊
+                - paragraph [ref=e66] [cursor=pointer]: ふれんど
+            - generic [ref=e67] [cursor=pointer]:
+              - img "ユピ" [ref=e69] [cursor=pointer]
+              - generic [ref=e70] [cursor=pointer]:
+                - paragraph [ref=e71] [cursor=pointer]: F-023 (P)
+                - paragraph [ref=e72] [cursor=pointer]: ユピ
+                - paragraph [ref=e73] [cursor=pointer]: ふれんど
+            - generic [ref=e74] [cursor=pointer]:
+              - img "しもん" [ref=e76] [cursor=pointer]
+              - generic [ref=e77] [cursor=pointer]:
+                - paragraph [ref=e78] [cursor=pointer]: F-025 (P)
+                - paragraph [ref=e79] [cursor=pointer]: しもん
+                - paragraph [ref=e80] [cursor=pointer]: ふれんど
+            - generic [ref=e81] [cursor=pointer]:
+              - img "メガロッコ" [ref=e83] [cursor=pointer]
+              - generic [ref=e84] [cursor=pointer]:
+                - paragraph [ref=e85] [cursor=pointer]: F-034 (P)
+                - paragraph [ref=e86] [cursor=pointer]: メガロッコ
+                - paragraph [ref=e87] [cursor=pointer]: ふれんど
+            - generic [ref=e88] [cursor=pointer]:
+              - img "ハヤオ" [ref=e90] [cursor=pointer]
+              - generic [ref=e91] [cursor=pointer]:
+                - paragraph [ref=e92] [cursor=pointer]: F-041 (P)
+                - paragraph [ref=e93] [cursor=pointer]: ハヤオ
+                - paragraph [ref=e94] [cursor=pointer]: ふれんど
+            - generic [ref=e95] [cursor=pointer]:
+              - img "うっきー" [ref=e97] [cursor=pointer]
+              - generic [ref=e98] [cursor=pointer]:
+                - paragraph [ref=e99] [cursor=pointer]: F-042 (P)
+                - paragraph [ref=e100] [cursor=pointer]: うっきー
+                - paragraph [ref=e101] [cursor=pointer]: ふれんど
+            - generic [ref=e102] [cursor=pointer]:
+              - img "Ko2" [ref=e104] [cursor=pointer]
+              - generic [ref=e105] [cursor=pointer]:
+                - paragraph [ref=e106] [cursor=pointer]: F-055 (P)
+                - paragraph [ref=e107] [cursor=pointer]: Ko2
+                - paragraph [ref=e108] [cursor=pointer]: ふれんど
+            - generic [ref=e109] [cursor=pointer]:
+              - img "シーラン" [ref=e111] [cursor=pointer]
+              - generic [ref=e112] [cursor=pointer]:
+                - paragraph [ref=e113] [cursor=pointer]: F-056 (P)
+                - paragraph [ref=e114] [cursor=pointer]: シーラン
+                - paragraph [ref=e115] [cursor=pointer]: ふれんど
+            - generic [ref=e116] [cursor=pointer]:
+              - img "正志とくらげ坊" [ref=e118] [cursor=pointer]
+              - generic [ref=e119] [cursor=pointer]:
+                - paragraph [ref=e120] [cursor=pointer]: F-066 (P)
+                - paragraph [ref=e121] [cursor=pointer]: 正志とくらげ坊
+                - paragraph [ref=e122] [cursor=pointer]: サポート
+            - generic [ref=e123] [cursor=pointer]:
+              - img "謎の四人衆" [ref=e125] [cursor=pointer]
+              - generic [ref=e126] [cursor=pointer]:
+                - paragraph [ref=e127] [cursor=pointer]: F-080 (P)
+                - paragraph [ref=e128] [cursor=pointer]: 謎の四人衆
+                - paragraph [ref=e129] [cursor=pointer]: サポート
+            - generic [ref=e130] [cursor=pointer]:
+              - img "バードン" [ref=e132] [cursor=pointer]
+              - generic [ref=e133] [cursor=pointer]:
+                - paragraph [ref=e134] [cursor=pointer]: F-001
+                - paragraph [ref=e135] [cursor=pointer]: バードン
+                - paragraph [ref=e136] [cursor=pointer]: ふれんど
+            - generic [ref=e137] [cursor=pointer]:
+              - img "なみだぶくろん" [ref=e139] [cursor=pointer]
+              - generic [ref=e140] [cursor=pointer]:
+                - paragraph [ref=e141] [cursor=pointer]: F-002
+                - paragraph [ref=e142] [cursor=pointer]: なみだぶくろん
+                - paragraph [ref=e143] [cursor=pointer]: ふれんど
+            - generic [ref=e144] [cursor=pointer]:
+              - img "フラフラ" [ref=e146] [cursor=pointer]
+              - generic [ref=e147] [cursor=pointer]:
+                - paragraph [ref=e148] [cursor=pointer]: F-003
+                - paragraph [ref=e149] [cursor=pointer]: フラフラ
+                - paragraph [ref=e150] [cursor=pointer]: ふれんど
+            - generic [ref=e151] [cursor=pointer]:
+              - img "ハシルシト" [ref=e153] [cursor=pointer]
+              - generic [ref=e154] [cursor=pointer]:
+                - paragraph [ref=e155] [cursor=pointer]: F-004
+                - paragraph [ref=e156] [cursor=pointer]: ハシルシト
+                - paragraph [ref=e157] [cursor=pointer]: ふれんど
+            - generic [ref=e158] [cursor=pointer]:
+              - img "かうちゃん" [ref=e160] [cursor=pointer]
+              - generic [ref=e161] [cursor=pointer]:
+                - paragraph [ref=e162] [cursor=pointer]: F-005
+                - paragraph [ref=e163] [cursor=pointer]: かうちゃん
+                - paragraph [ref=e164] [cursor=pointer]: ふれんど
+            - generic [ref=e165] [cursor=pointer]:
+              - img "ヒヤケラトプス" [ref=e167] [cursor=pointer]
+              - generic [ref=e168] [cursor=pointer]:
+                - paragraph [ref=e169] [cursor=pointer]: F-006
+                - paragraph [ref=e170] [cursor=pointer]: ヒヤケラトプス
+                - paragraph [ref=e171] [cursor=pointer]: ふれんど
+            - generic [ref=e172] [cursor=pointer]:
+              - img "るくそー" [ref=e174] [cursor=pointer]
+              - generic [ref=e175] [cursor=pointer]:
+                - paragraph [ref=e176] [cursor=pointer]: F-007
+                - paragraph [ref=e177] [cursor=pointer]: るくそー
+                - paragraph [ref=e178] [cursor=pointer]: ふれんど
+            - generic [ref=e179] [cursor=pointer]:
+              - img "ボーイ" [ref=e181] [cursor=pointer]
+              - generic [ref=e182] [cursor=pointer]:
+                - paragraph [ref=e183] [cursor=pointer]: F-008
+                - paragraph [ref=e184] [cursor=pointer]: ボーイ
+                - paragraph [ref=e185] [cursor=pointer]: ふれんど
+            - generic [ref=e186] [cursor=pointer]:
+              - img "八つ目" [ref=e188] [cursor=pointer]
+              - generic [ref=e189] [cursor=pointer]:
+                - paragraph [ref=e190] [cursor=pointer]: F-009
+                - paragraph [ref=e191] [cursor=pointer]: 八つ目
+                - paragraph [ref=e192] [cursor=pointer]: ふれんど
+            - generic [ref=e193] [cursor=pointer]:
+              - img "ブロントくん" [ref=e195] [cursor=pointer]
+              - generic [ref=e196] [cursor=pointer]:
+                - paragraph [ref=e197] [cursor=pointer]: F-010
+                - paragraph [ref=e198] [cursor=pointer]: ブロントくん
+                - paragraph [ref=e199] [cursor=pointer]: ふれんど
+            - generic [ref=e200] [cursor=pointer]:
+              - img "ポチ" [ref=e202] [cursor=pointer]
+              - generic [ref=e203] [cursor=pointer]:
+                - paragraph [ref=e204] [cursor=pointer]: F-011
+                - paragraph [ref=e205] [cursor=pointer]: ポチ
+                - paragraph [ref=e206] [cursor=pointer]: ふれんど
+            - generic [ref=e207] [cursor=pointer]:
+              - img "くらげ坊" [ref=e209] [cursor=pointer]
+              - generic [ref=e210] [cursor=pointer]:
+                - paragraph [ref=e211] [cursor=pointer]: F-012
+                - paragraph [ref=e212] [cursor=pointer]: くらげ坊
+                - paragraph [ref=e213] [cursor=pointer]: ふれんど
+            - generic [ref=e214] [cursor=pointer]:
+              - img "るくそー" [ref=e216] [cursor=pointer]
+              - generic [ref=e217] [cursor=pointer]:
+                - paragraph [ref=e218] [cursor=pointer]: F-013
+                - paragraph [ref=e219] [cursor=pointer]: るくそー
+                - paragraph [ref=e220] [cursor=pointer]: ふれんど
+            - generic [ref=e221] [cursor=pointer]:
+              - img "くらげ坊" [ref=e223] [cursor=pointer]
+              - generic [ref=e224] [cursor=pointer]:
+                - paragraph [ref=e225] [cursor=pointer]: F-014
+                - paragraph [ref=e226] [cursor=pointer]: くらげ坊
+                - paragraph [ref=e227] [cursor=pointer]: ふれんど
+            - generic [ref=e228] [cursor=pointer]:
+              - img "ティラノちゃん" [ref=e230] [cursor=pointer]
+              - generic [ref=e231] [cursor=pointer]:
+                - paragraph [ref=e232] [cursor=pointer]: F-015
+                - paragraph [ref=e233] [cursor=pointer]: ティラノちゃん
+                - paragraph [ref=e234] [cursor=pointer]: ふれんど
+            - generic [ref=e235] [cursor=pointer]:
+              - img "くらげ坊" [ref=e237] [cursor=pointer]
+              - generic [ref=e238] [cursor=pointer]:
+                - paragraph [ref=e239] [cursor=pointer]: F-016
+                - paragraph [ref=e240] [cursor=pointer]: くらげ坊
+                - paragraph [ref=e241] [cursor=pointer]: ふれんど
+            - generic [ref=e242] [cursor=pointer]:
+              - img "じゅごん" [ref=e244] [cursor=pointer]
+              - generic [ref=e245] [cursor=pointer]:
+                - paragraph [ref=e246] [cursor=pointer]: F-017
+                - paragraph [ref=e247] [cursor=pointer]: じゅごん
+                - paragraph [ref=e248] [cursor=pointer]: ふれんど
+            - generic [ref=e249] [cursor=pointer]:
+              - img "イソチャック" [ref=e251] [cursor=pointer]
+              - generic [ref=e252] [cursor=pointer]:
+                - paragraph [ref=e253] [cursor=pointer]: F-018
+                - paragraph [ref=e254] [cursor=pointer]: イソチャック
+                - paragraph [ref=e255] [cursor=pointer]: ふれんど
+            - generic [ref=e256] [cursor=pointer]:
+              - img "カラカッサン" [ref=e258] [cursor=pointer]
+              - generic [ref=e259] [cursor=pointer]:
+                - paragraph [ref=e260] [cursor=pointer]: F-019
+                - paragraph [ref=e261] [cursor=pointer]: カラカッサン
+                - paragraph [ref=e262] [cursor=pointer]: ふれんど
+            - generic [ref=e263] [cursor=pointer]:
+              - img "マルカニ" [ref=e265] [cursor=pointer]
+              - generic [ref=e266] [cursor=pointer]:
+                - paragraph [ref=e267] [cursor=pointer]: F-020
+                - paragraph [ref=e268] [cursor=pointer]: マルカニ
+                - paragraph [ref=e269] [cursor=pointer]: ふれんど
+            - generic [ref=e270] [cursor=pointer]:
+              - img "イチゴバット" [ref=e272] [cursor=pointer]
+              - generic [ref=e273] [cursor=pointer]:
+                - paragraph [ref=e274] [cursor=pointer]: F-021
+                - paragraph [ref=e275] [cursor=pointer]: イチゴバット
+                - paragraph [ref=e276] [cursor=pointer]: ふれんど
+            - generic [ref=e277] [cursor=pointer]:
+              - img "ジョニー" [ref=e279] [cursor=pointer]
+              - generic [ref=e280] [cursor=pointer]:
+                - paragraph [ref=e281] [cursor=pointer]: F-022
+                - paragraph [ref=e282] [cursor=pointer]: ジョニー
+                - paragraph [ref=e283] [cursor=pointer]: ふれんど
+            - generic [ref=e284] [cursor=pointer]:
+              - img "ユピ" [ref=e286] [cursor=pointer]
+              - generic [ref=e287] [cursor=pointer]:
+                - paragraph [ref=e288] [cursor=pointer]: F-023
+                - paragraph [ref=e289] [cursor=pointer]: ユピ
+                - paragraph [ref=e290] [cursor=pointer]: ふれんど
+            - generic [ref=e291] [cursor=pointer]:
+              - img "ジェラチンポン" [ref=e293] [cursor=pointer]
+              - generic [ref=e294] [cursor=pointer]:
+                - paragraph [ref=e295] [cursor=pointer]: F-024
+                - paragraph [ref=e296] [cursor=pointer]: ジェラチンポン
+                - paragraph [ref=e297] [cursor=pointer]: ふれんど
+            - generic [ref=e298] [cursor=pointer]:
+              - img "しもん" [ref=e300] [cursor=pointer]
+              - generic [ref=e301] [cursor=pointer]:
+                - paragraph [ref=e302] [cursor=pointer]: F-025
+                - paragraph [ref=e303] [cursor=pointer]: しもん
+                - paragraph [ref=e304] [cursor=pointer]: ふれんど
+            - generic [ref=e305] [cursor=pointer]:
+              - img "ランプ" [ref=e307] [cursor=pointer]
+              - generic [ref=e308] [cursor=pointer]:
+                - paragraph [ref=e309] [cursor=pointer]: F-026
+                - paragraph [ref=e310] [cursor=pointer]: ランプ
+                - paragraph [ref=e311] [cursor=pointer]: ふれんど
+            - generic [ref=e312] [cursor=pointer]:
+              - img "ハンマーヘッドくん" [ref=e314] [cursor=pointer]
+              - generic [ref=e315] [cursor=pointer]:
+                - paragraph [ref=e316] [cursor=pointer]: F-027
+                - paragraph [ref=e317] [cursor=pointer]: ハンマーヘッドくん
+                - paragraph [ref=e318] [cursor=pointer]: ふれんど
+            - generic [ref=e319] [cursor=pointer]:
+              - img "ビッグアーム" [ref=e321] [cursor=pointer]
+              - generic [ref=e322] [cursor=pointer]:
+                - paragraph [ref=e323] [cursor=pointer]: F-028
+                - paragraph [ref=e324] [cursor=pointer]: ビッグアーム
+                - paragraph [ref=e325] [cursor=pointer]: ふれんど
+            - generic [ref=e326] [cursor=pointer]:
+              - img "カラカッサン" [ref=e328] [cursor=pointer]
+              - generic [ref=e329] [cursor=pointer]:
+                - paragraph [ref=e330] [cursor=pointer]: F-029
+                - paragraph [ref=e331] [cursor=pointer]: カラカッサン
+                - paragraph [ref=e332] [cursor=pointer]: ふれんど
+            - generic [ref=e333] [cursor=pointer]:
+              - img "クッキー" [ref=e335] [cursor=pointer]
+              - generic [ref=e336] [cursor=pointer]:
+                - paragraph [ref=e337] [cursor=pointer]: F-030
+                - paragraph [ref=e338] [cursor=pointer]: クッキー
+                - paragraph [ref=e339] [cursor=pointer]: ふれんど
+            - generic [ref=e340] [cursor=pointer]:
+              - img "ユピ" [ref=e342] [cursor=pointer]
+              - generic [ref=e343] [cursor=pointer]:
+                - paragraph [ref=e344] [cursor=pointer]: F-031
+                - paragraph [ref=e345] [cursor=pointer]: ユピ
+                - paragraph [ref=e346] [cursor=pointer]: ふれんど
+            - generic [ref=e347] [cursor=pointer]:
+              - img "しもん" [ref=e349] [cursor=pointer]
+              - generic [ref=e350] [cursor=pointer]:
+                - paragraph [ref=e351] [cursor=pointer]: F-032
+                - paragraph [ref=e352] [cursor=pointer]: しもん
+                - paragraph [ref=e353] [cursor=pointer]: ふれんど
+            - generic [ref=e354] [cursor=pointer]:
+              - img "ボーグ" [ref=e356] [cursor=pointer]
+              - generic [ref=e357] [cursor=pointer]:
+                - paragraph [ref=e358] [cursor=pointer]: F-033
+                - paragraph [ref=e359] [cursor=pointer]: ボーグ
+                - paragraph [ref=e360] [cursor=pointer]: ふれんど
+            - generic [ref=e361] [cursor=pointer]:
+              - img "メガロッコ" [ref=e363] [cursor=pointer]
+              - generic [ref=e364] [cursor=pointer]:
+                - paragraph [ref=e365] [cursor=pointer]: F-034
+                - paragraph [ref=e366] [cursor=pointer]: メガロッコ
+                - paragraph [ref=e367] [cursor=pointer]: ふれんど
+            - generic [ref=e368] [cursor=pointer]:
+              - img "ジセダイ" [ref=e370] [cursor=pointer]
+              - generic [ref=e371] [cursor=pointer]:
+                - paragraph [ref=e372] [cursor=pointer]: F-035
+                - paragraph [ref=e373] [cursor=pointer]: ジセダイ
+                - paragraph [ref=e374] [cursor=pointer]: ふれんど
+            - generic [ref=e375] [cursor=pointer]:
+              - img "わらべ" [ref=e377] [cursor=pointer]
+              - generic [ref=e378] [cursor=pointer]:
+                - paragraph [ref=e379] [cursor=pointer]: F-036
+                - paragraph [ref=e380] [cursor=pointer]: わらべ
+                - paragraph [ref=e381] [cursor=pointer]: ふれんど
+            - generic [ref=e382] [cursor=pointer]:
+              - img "カンブリアン" [ref=e384] [cursor=pointer]
+              - generic [ref=e385] [cursor=pointer]:
+                - paragraph [ref=e386] [cursor=pointer]: F-037
+                - paragraph [ref=e387] [cursor=pointer]: カンブリアン
+                - paragraph [ref=e388] [cursor=pointer]: ふれんど
+            - generic [ref=e389] [cursor=pointer]:
+              - img "シンゴーくん" [ref=e391] [cursor=pointer]
+              - generic [ref=e392] [cursor=pointer]:
+                - paragraph [ref=e393] [cursor=pointer]: F-038
+                - paragraph [ref=e394] [cursor=pointer]: シンゴーくん
+                - paragraph [ref=e395] [cursor=pointer]: ふれんど
+            - generic [ref=e396] [cursor=pointer]:
+              - img "ヌリカベーゼ" [ref=e398] [cursor=pointer]
+              - generic [ref=e399] [cursor=pointer]:
+                - paragraph [ref=e400] [cursor=pointer]: F-039
+                - paragraph [ref=e401] [cursor=pointer]: ヌリカベーゼ
+                - paragraph [ref=e402] [cursor=pointer]: ふれんど
+            - generic [ref=e403] [cursor=pointer]:
+              - img "フジさん" [ref=e405] [cursor=pointer]
+              - generic [ref=e406] [cursor=pointer]:
+                - paragraph [ref=e407] [cursor=pointer]: F-040
+                - paragraph [ref=e408] [cursor=pointer]: フジさん
+                - paragraph [ref=e409] [cursor=pointer]: ふれんど
+            - generic [ref=e410] [cursor=pointer]:
+              - img "ハヤオ" [ref=e412] [cursor=pointer]
+              - generic [ref=e413] [cursor=pointer]:
+                - paragraph [ref=e414] [cursor=pointer]: F-041
+                - paragraph [ref=e415] [cursor=pointer]: ハヤオ
+                - paragraph [ref=e416] [cursor=pointer]: ふれんど
+            - generic [ref=e417] [cursor=pointer]:
+              - img "うっきー" [ref=e419] [cursor=pointer]
+              - generic [ref=e420] [cursor=pointer]:
+                - paragraph [ref=e421] [cursor=pointer]: F-042
+                - paragraph [ref=e422] [cursor=pointer]: うっきー
+                - paragraph [ref=e423] [cursor=pointer]: ふれんど
+            - generic [ref=e424] [cursor=pointer]:
+              - img "メガロッコ" [ref=e426] [cursor=pointer]
+              - generic [ref=e427] [cursor=pointer]:
+                - paragraph [ref=e428] [cursor=pointer]: F-043
+                - paragraph [ref=e429] [cursor=pointer]: メガロッコ
+                - paragraph [ref=e430] [cursor=pointer]: ふれんど
+            - generic [ref=e431] [cursor=pointer]:
+              - img "うっきー" [ref=e433] [cursor=pointer]
+              - generic [ref=e434] [cursor=pointer]:
+                - paragraph [ref=e435] [cursor=pointer]: F-044
+                - paragraph [ref=e436] [cursor=pointer]: うっきー
+                - paragraph [ref=e437] [cursor=pointer]: ふれんど
+            - generic [ref=e438] [cursor=pointer]:
+              - img "FM94.3" [ref=e440] [cursor=pointer]
+              - generic [ref=e441] [cursor=pointer]:
+                - paragraph [ref=e442] [cursor=pointer]: F-045
+                - paragraph [ref=e443] [cursor=pointer]: FM94.3
+                - paragraph [ref=e444] [cursor=pointer]: ふれんど
+            - generic [ref=e445] [cursor=pointer]:
+              - img "ピンヒール" [ref=e447] [cursor=pointer]
+              - generic [ref=e448] [cursor=pointer]:
+                - paragraph [ref=e449] [cursor=pointer]: F-046
+                - paragraph [ref=e450] [cursor=pointer]: ピンヒール
+                - paragraph [ref=e451] [cursor=pointer]: ふれんど
+            - generic [ref=e452] [cursor=pointer]:
+              - img "だんぼー" [ref=e454] [cursor=pointer]
+              - generic [ref=e455] [cursor=pointer]:
+                - paragraph [ref=e456] [cursor=pointer]: F-047
+                - paragraph [ref=e457] [cursor=pointer]: だんぼー
+                - paragraph [ref=e458] [cursor=pointer]: ふれんど
+            - generic [ref=e459] [cursor=pointer]:
+              - img "ハヤオ" [ref=e461] [cursor=pointer]
+              - generic [ref=e462] [cursor=pointer]:
+                - paragraph [ref=e463] [cursor=pointer]: F-048
+                - paragraph [ref=e464] [cursor=pointer]: ハヤオ
+                - paragraph [ref=e465] [cursor=pointer]: ふれんど
+            - generic [ref=e466] [cursor=pointer]:
+              - img "くるくるるん" [ref=e468] [cursor=pointer]
+              - generic [ref=e469] [cursor=pointer]:
+                - paragraph [ref=e470] [cursor=pointer]: F-049
+                - paragraph [ref=e471] [cursor=pointer]: くるくるるん
+                - paragraph [ref=e472] [cursor=pointer]: ふれんど
+            - generic [ref=e473] [cursor=pointer]:
+              - img "みのたま" [ref=e475] [cursor=pointer]
+              - generic [ref=e476] [cursor=pointer]:
+                - paragraph [ref=e477] [cursor=pointer]: F-050
+                - paragraph [ref=e478] [cursor=pointer]: みのたま
+                - paragraph [ref=e479] [cursor=pointer]: ふれんど
+            - generic [ref=e480] [cursor=pointer]:
+              - img "クワクワクワ" [ref=e482] [cursor=pointer]
+              - generic [ref=e483] [cursor=pointer]:
+                - paragraph [ref=e484] [cursor=pointer]: F-051
+                - paragraph [ref=e485] [cursor=pointer]: クワクワクワ
+                - paragraph [ref=e486] [cursor=pointer]: ふれんど
+            - generic [ref=e487] [cursor=pointer]:
+              - img "ゆーゆーれん" [ref=e489] [cursor=pointer]
+              - generic [ref=e490] [cursor=pointer]:
+                - paragraph [ref=e491] [cursor=pointer]: F-052
+                - paragraph [ref=e492] [cursor=pointer]: ゆーゆーれん
+                - paragraph [ref=e493] [cursor=pointer]: ふれんど
+            - generic [ref=e494] [cursor=pointer]:
+              - img "イガイガリン" [ref=e496] [cursor=pointer]
+              - generic [ref=e497] [cursor=pointer]:
+                - paragraph [ref=e498] [cursor=pointer]: F-053
+                - paragraph [ref=e499] [cursor=pointer]: イガイガリン
+                - paragraph [ref=e500] [cursor=pointer]: ふれんど
+            - generic [ref=e501] [cursor=pointer]:
+              - img "オオケムシ" [ref=e503] [cursor=pointer]
+              - generic [ref=e504] [cursor=pointer]:
+                - paragraph [ref=e505] [cursor=pointer]: F-054
+                - paragraph [ref=e506] [cursor=pointer]: オオケムシ
+                - paragraph [ref=e507] [cursor=pointer]: ふれんど
+            - generic [ref=e508] [cursor=pointer]:
+              - img "Ko2" [ref=e510] [cursor=pointer]
+              - generic [ref=e511] [cursor=pointer]:
+                - paragraph [ref=e512] [cursor=pointer]: F-055
+                - paragraph [ref=e513] [cursor=pointer]: Ko2
+                - paragraph [ref=e514] [cursor=pointer]: ふれんど
+            - generic [ref=e515] [cursor=pointer]:
+              - img "シーラン" [ref=e517] [cursor=pointer]
+              - generic [ref=e518] [cursor=pointer]:
+                - paragraph [ref=e519] [cursor=pointer]: F-056
+                - paragraph [ref=e520] [cursor=pointer]: シーラン
+                - paragraph [ref=e521] [cursor=pointer]: ふれんど
+            - generic [ref=e522] [cursor=pointer]:
+              - img "モモイ" [ref=e524] [cursor=pointer]
+              - generic [ref=e525] [cursor=pointer]:
+                - paragraph [ref=e526] [cursor=pointer]: F-057
+                - paragraph [ref=e527] [cursor=pointer]: モモイ
+                - paragraph [ref=e528] [cursor=pointer]: ふれんど
+            - generic [ref=e529] [cursor=pointer]:
+              - img "シーラン" [ref=e531] [cursor=pointer]
+              - generic [ref=e532] [cursor=pointer]:
+                - paragraph [ref=e533] [cursor=pointer]: F-058
+                - paragraph [ref=e534] [cursor=pointer]: シーラン
+                - paragraph [ref=e535] [cursor=pointer]: ふれんど
+            - generic [ref=e536] [cursor=pointer]:
+              - img "オニガワラン" [ref=e538] [cursor=pointer]
+              - generic [ref=e539] [cursor=pointer]:
+                - paragraph [ref=e540] [cursor=pointer]: F-059
+                - paragraph [ref=e541] [cursor=pointer]: オニガワラン
+                - paragraph [ref=e542] [cursor=pointer]: ふれんど
+            - generic [ref=e543] [cursor=pointer]:
+              - img "カゲロウくん" [ref=e545] [cursor=pointer]
+              - generic [ref=e546] [cursor=pointer]:
+                - paragraph [ref=e547] [cursor=pointer]: F-060
+                - paragraph [ref=e548] [cursor=pointer]: カゲロウくん
+                - paragraph [ref=e549] [cursor=pointer]: ふれんど
+            - generic [ref=e550] [cursor=pointer]:
+              - img "ペチカ" [ref=e552] [cursor=pointer]
+              - generic [ref=e553] [cursor=pointer]:
+                - paragraph [ref=e554] [cursor=pointer]: F-061
+                - paragraph [ref=e555] [cursor=pointer]: ペチカ
+                - paragraph [ref=e556] [cursor=pointer]: ふれんど
+            - generic [ref=e557] [cursor=pointer]:
+              - img "えびすけ" [ref=e559] [cursor=pointer]
+              - generic [ref=e560] [cursor=pointer]:
+                - paragraph [ref=e561] [cursor=pointer]: F-062
+                - paragraph [ref=e562] [cursor=pointer]: えびすけ
+                - paragraph [ref=e563] [cursor=pointer]: ふれんど
+            - generic [ref=e564] [cursor=pointer]:
+              - img "トーテムポーラ" [ref=e566] [cursor=pointer]
+              - generic [ref=e567] [cursor=pointer]:
+                - paragraph [ref=e568] [cursor=pointer]: F-063
+                - paragraph [ref=e569] [cursor=pointer]: トーテムポーラ
+                - paragraph [ref=e570] [cursor=pointer]: ふれんど
+            - generic [ref=e571] [cursor=pointer]:
+              - img "Ko2" [ref=e573] [cursor=pointer]
+              - generic [ref=e574] [cursor=pointer]:
+                - paragraph [ref=e575] [cursor=pointer]: F-064
+                - paragraph [ref=e576] [cursor=pointer]: Ko2
+                - paragraph [ref=e577] [cursor=pointer]: ふれんど
+            - generic [ref=e578] [cursor=pointer]:
+              - img "ガーディアン" [ref=e580] [cursor=pointer]
+              - generic [ref=e581] [cursor=pointer]:
+                - paragraph [ref=e582] [cursor=pointer]: F-065
+                - paragraph [ref=e583] [cursor=pointer]: ガーディアン
+                - paragraph [ref=e584] [cursor=pointer]: サポート
+            - generic [ref=e585] [cursor=pointer]:
+              - img "正志とくらげ坊" [ref=e587] [cursor=pointer]
+              - generic [ref=e588] [cursor=pointer]:
+                - paragraph [ref=e589] [cursor=pointer]: F-066
+                - paragraph [ref=e590] [cursor=pointer]: 正志とくらげ坊
+                - paragraph [ref=e591] [cursor=pointer]: サポート
+            - generic [ref=e592] [cursor=pointer]:
+              - img "大好物！" [ref=e594] [cursor=pointer]
+              - generic [ref=e595] [cursor=pointer]:
+                - paragraph [ref=e596] [cursor=pointer]: F-067
+                - paragraph [ref=e597] [cursor=pointer]: 大好物！
+                - paragraph [ref=e598] [cursor=pointer]: サポート
+            - generic [ref=e599] [cursor=pointer]:
+              - img "デコ―レーション" [ref=e601] [cursor=pointer]
+              - generic [ref=e602] [cursor=pointer]:
+                - paragraph [ref=e603] [cursor=pointer]: F-068
+                - paragraph [ref=e604] [cursor=pointer]: デコ―レーション
+                - paragraph [ref=e605] [cursor=pointer]: サポート
+            - generic [ref=e606] [cursor=pointer]:
+              - img "特異点が開く扉" [ref=e608] [cursor=pointer]
+              - generic [ref=e609] [cursor=pointer]:
+                - paragraph [ref=e610] [cursor=pointer]: F-069
+                - paragraph [ref=e611] [cursor=pointer]: 特異点が開く扉
+                - paragraph [ref=e612] [cursor=pointer]: サポート
+            - generic [ref=e613] [cursor=pointer]:
+              - img "ブルードラゴン飛連蹴" [ref=e615] [cursor=pointer]
+              - generic [ref=e616] [cursor=pointer]:
+                - paragraph [ref=e617] [cursor=pointer]: F-070
+                - paragraph [ref=e618] [cursor=pointer]: ブルードラゴン飛連蹴
+                - paragraph [ref=e619] [cursor=pointer]: サポート
+            - generic [ref=e620] [cursor=pointer]:
+              - img "絶対に裏切らない友達" [ref=e622] [cursor=pointer]
+              - generic [ref=e623] [cursor=pointer]:
+                - paragraph [ref=e624] [cursor=pointer]: F-071
+                - paragraph [ref=e625] [cursor=pointer]: 絶対に裏切らない友達
+                - paragraph [ref=e626] [cursor=pointer]: サポート
+            - generic [ref=e627] [cursor=pointer]:
+              - img "竜也とユピ" [ref=e629] [cursor=pointer]
+              - generic [ref=e630] [cursor=pointer]:
+                - paragraph [ref=e631] [cursor=pointer]: F-072
+                - paragraph [ref=e632] [cursor=pointer]: 竜也とユピ
+                - paragraph [ref=e633] [cursor=pointer]: サポート
+            - generic [ref=e634] [cursor=pointer]:
+              - img "古池ダイビング" [ref=e636] [cursor=pointer]
+              - generic [ref=e637] [cursor=pointer]:
+                - paragraph [ref=e638] [cursor=pointer]: F-073
+                - paragraph [ref=e639] [cursor=pointer]: 古池ダイビング
+                - paragraph [ref=e640] [cursor=pointer]: サポート
+            - generic [ref=e641] [cursor=pointer]:
+              - img "出現" [ref=e643] [cursor=pointer]
+              - generic [ref=e644] [cursor=pointer]:
+                - paragraph [ref=e645] [cursor=pointer]: F-074
+                - paragraph [ref=e646] [cursor=pointer]: 出現
+                - paragraph [ref=e647] [cursor=pointer]: サポート
+            - generic [ref=e648] [cursor=pointer]:
+              - img "同調攻撃！" [ref=e650] [cursor=pointer]
+              - generic [ref=e651] [cursor=pointer]:
+                - paragraph [ref=e652] [cursor=pointer]: F-075
+                - paragraph [ref=e653] [cursor=pointer]: 同調攻撃！
+                - paragraph [ref=e654] [cursor=pointer]: サポート
+            - generic [ref=e655] [cursor=pointer]:
+              - img "ヘッドバット" [ref=e657] [cursor=pointer]
+              - generic [ref=e658] [cursor=pointer]:
+                - paragraph [ref=e659] [cursor=pointer]: F-076
+                - paragraph [ref=e660] [cursor=pointer]: ヘッドバット
+                - paragraph [ref=e661] [cursor=pointer]: サポート
+            - generic [ref=e662] [cursor=pointer]:
+              - img "チーム対抗" [ref=e664] [cursor=pointer]
+              - generic [ref=e665] [cursor=pointer]:
+                - paragraph [ref=e666] [cursor=pointer]: F-077
+                - paragraph [ref=e667] [cursor=pointer]: チーム対抗
+                - paragraph [ref=e668] [cursor=pointer]: サポート
+            - generic [ref=e669] [cursor=pointer]:
+              - img "念力" [ref=e671] [cursor=pointer]
+              - generic [ref=e672] [cursor=pointer]:
+                - paragraph [ref=e673] [cursor=pointer]: F-078
+                - paragraph [ref=e674] [cursor=pointer]: 念力
+                - paragraph [ref=e675] [cursor=pointer]: サポート
+            - generic [ref=e676] [cursor=pointer]:
+              - img "聞いちゃった！" [ref=e678] [cursor=pointer]
+              - generic [ref=e679] [cursor=pointer]:
+                - paragraph [ref=e680] [cursor=pointer]: F-079
+                - paragraph [ref=e681] [cursor=pointer]: 聞いちゃった！
+                - paragraph [ref=e682] [cursor=pointer]: サポート
+            - generic [ref=e683] [cursor=pointer]:
+              - img "謎の四人衆" [ref=e685] [cursor=pointer]
+              - generic [ref=e686] [cursor=pointer]:
+                - paragraph [ref=e687] [cursor=pointer]: F-080
+                - paragraph [ref=e688] [cursor=pointer]: 謎の四人衆
+                - paragraph [ref=e689] [cursor=pointer]: サポート
+            - generic [ref=e690] [cursor=pointer]:
+              - img "キャベン・ディッシュ" [ref=e692] [cursor=pointer]
+              - generic [ref=e693] [cursor=pointer]:
+                - paragraph [ref=e694] [cursor=pointer]: F-081
+                - paragraph [ref=e695] [cursor=pointer]: キャベン・ディッシュ
+                - paragraph [ref=e696] [cursor=pointer]: サポート
+            - generic [ref=e697] [cursor=pointer]:
+              - img "絶対否定領域" [ref=e699] [cursor=pointer]
+              - generic [ref=e700] [cursor=pointer]:
+                - paragraph [ref=e701] [cursor=pointer]: F-082
+                - paragraph [ref=e702] [cursor=pointer]: 絶対否定領域
+                - paragraph [ref=e703] [cursor=pointer]: サポート
+            - generic [ref=e704] [cursor=pointer]:
+              - img "巧とゲーム" [ref=e706] [cursor=pointer]
+              - generic [ref=e707] [cursor=pointer]:
+                - paragraph [ref=e708] [cursor=pointer]: F-083
+                - paragraph [ref=e709] [cursor=pointer]: 巧とゲーム
+                - paragraph [ref=e710] [cursor=pointer]: サポート
+            - generic [ref=e711] [cursor=pointer]:
+              - img "ワイルドワインド" [ref=e713] [cursor=pointer]
+              - generic [ref=e714] [cursor=pointer]:
+                - paragraph [ref=e715] [cursor=pointer]: F-084
+                - paragraph [ref=e716] [cursor=pointer]: ワイルドワインド
+                - paragraph [ref=e717] [cursor=pointer]: サポート
+            - generic [ref=e718] [cursor=pointer]:
+              - img "プログラム解析" [ref=e720] [cursor=pointer]
+              - generic [ref=e721] [cursor=pointer]:
+                - paragraph [ref=e722] [cursor=pointer]: F-085
+                - paragraph [ref=e723] [cursor=pointer]: プログラム解析
+                - paragraph [ref=e724] [cursor=pointer]: サポート
+            - generic [ref=e725] [cursor=pointer]:
+              - img "最強ふれんど決定戦" [ref=e727] [cursor=pointer]
+              - generic [ref=e728] [cursor=pointer]:
+                - paragraph [ref=e729] [cursor=pointer]: F-086
+                - paragraph [ref=e730] [cursor=pointer]: 最強ふれんど決定戦
+                - paragraph [ref=e731] [cursor=pointer]: サポート
+            - generic [ref=e732] [cursor=pointer]:
+              - img "熱風破砕掌" [ref=e734] [cursor=pointer]
+              - generic [ref=e735] [cursor=pointer]:
+                - paragraph [ref=e736] [cursor=pointer]: F-087
+                - paragraph [ref=e737] [cursor=pointer]: 熱風破砕掌
+                - paragraph [ref=e738] [cursor=pointer]: サポート
+            - generic [ref=e739] [cursor=pointer]:
+              - img "「ゲーム終了」" [ref=e741] [cursor=pointer]
+              - generic [ref=e742] [cursor=pointer]:
+                - paragraph [ref=e743] [cursor=pointer]: F-088
+                - paragraph [ref=e744] [cursor=pointer]: 「ゲーム終了」
+                - paragraph [ref=e745] [cursor=pointer]: サポート
+            - generic [ref=e746] [cursor=pointer]:
+              - img "見晴らし台" [ref=e748] [cursor=pointer]
+              - generic [ref=e749] [cursor=pointer]:
+                - paragraph [ref=e750] [cursor=pointer]: F-089
+                - paragraph [ref=e751] [cursor=pointer]: 見晴らし台
+                - paragraph [ref=e752] [cursor=pointer]: フィールド
+            - generic [ref=e753] [cursor=pointer]:
+              - img "神社" [ref=e755] [cursor=pointer]
+              - generic [ref=e756] [cursor=pointer]:
+                - paragraph [ref=e757] [cursor=pointer]: F-090
+                - paragraph [ref=e758] [cursor=pointer]: 神社
+                - paragraph [ref=e759] [cursor=pointer]: フィールド
+            - generic [ref=e760] [cursor=pointer]:
+              - img "正志の家" [ref=e762] [cursor=pointer]
+              - generic [ref=e763] [cursor=pointer]:
+                - paragraph [ref=e764] [cursor=pointer]: F-091
+                - paragraph [ref=e765] [cursor=pointer]: 正志の家
+                - paragraph [ref=e766] [cursor=pointer]: フィールド
+            - generic [ref=e767] [cursor=pointer]:
+              - img "不思議な教室" [ref=e769] [cursor=pointer]
+              - generic [ref=e770] [cursor=pointer]:
+                - paragraph [ref=e771] [cursor=pointer]: F-092
+                - paragraph [ref=e772] [cursor=pointer]: 不思議な教室
+                - paragraph [ref=e773] [cursor=pointer]: フィールド
+            - generic [ref=e774] [cursor=pointer]:
+              - img "学園のプール" [ref=e776] [cursor=pointer]
+              - generic [ref=e777] [cursor=pointer]:
+                - paragraph [ref=e778] [cursor=pointer]: F-093
+                - paragraph [ref=e779] [cursor=pointer]: 学園のプール
+                - paragraph [ref=e780] [cursor=pointer]: フィールド
+            - generic [ref=e781] [cursor=pointer]:
+              - img "研究所" [ref=e783] [cursor=pointer]
+              - generic [ref=e784] [cursor=pointer]:
+                - paragraph [ref=e785] [cursor=pointer]: F-094
+                - paragraph [ref=e786] [cursor=pointer]: 研究所
+                - paragraph [ref=e787] [cursor=pointer]: フィールド
+            - generic [ref=e788] [cursor=pointer]:
+              - img "都雲大学" [ref=e790] [cursor=pointer]
+              - generic [ref=e791] [cursor=pointer]:
+                - paragraph [ref=e792] [cursor=pointer]: F-095
+                - paragraph [ref=e793] [cursor=pointer]: 都雲大学
+                - paragraph [ref=e794] [cursor=pointer]: フィールド
+            - generic [ref=e795] [cursor=pointer]:
+              - img "天地救世教会本部" [ref=e797] [cursor=pointer]
+              - generic [ref=e798] [cursor=pointer]:
+                - paragraph [ref=e799] [cursor=pointer]: F-096
+                - paragraph [ref=e800] [cursor=pointer]: 天地救世教会本部
+                - paragraph [ref=e801] [cursor=pointer]: フィールド
+            - generic [ref=e802] [cursor=pointer]:
+              - img "都雲祭" [ref=e804] [cursor=pointer]
+              - generic [ref=e805] [cursor=pointer]:
+                - paragraph [ref=e806] [cursor=pointer]: F-097
+                - paragraph [ref=e807] [cursor=pointer]: 都雲祭
+                - paragraph [ref=e808] [cursor=pointer]: フィールド
+            - generic [ref=e809] [cursor=pointer]:
+              - img "もぐらの家" [ref=e811] [cursor=pointer]
+              - generic [ref=e812] [cursor=pointer]:
+                - paragraph [ref=e813] [cursor=pointer]: F-098
+                - paragraph [ref=e814] [cursor=pointer]: もぐらの家
+                - paragraph [ref=e815] [cursor=pointer]: フィールド
+            - generic [ref=e816] [cursor=pointer]:
+              - img "ごみ捨て場" [ref=e818] [cursor=pointer]
+              - generic [ref=e819] [cursor=pointer]:
+                - paragraph [ref=e820] [cursor=pointer]: F-099
+                - paragraph [ref=e821] [cursor=pointer]: ごみ捨て場
+                - paragraph [ref=e822] [cursor=pointer]: フィールド
+            - generic [ref=e823] [cursor=pointer]:
+              - img "屋上" [ref=e825] [cursor=pointer]
+              - generic [ref=e826] [cursor=pointer]:
+                - paragraph [ref=e827] [cursor=pointer]: F-100
+                - paragraph [ref=e828] [cursor=pointer]: 屋上
+                - paragraph [ref=e829] [cursor=pointer]: フィールド
+            - generic [ref=e830] [cursor=pointer]:
+              - img "オーバル" [ref=e832] [cursor=pointer]
+              - generic [ref=e833] [cursor=pointer]:
+                - paragraph [ref=e834] [cursor=pointer]: F-101
+                - paragraph [ref=e835] [cursor=pointer]: オーバル
+                - paragraph [ref=e836] [cursor=pointer]: ふれんど
+            - generic [ref=e837] [cursor=pointer]:
+              - img "くらげ坊(変身)" [ref=e839] [cursor=pointer]
+              - generic [ref=e840] [cursor=pointer]:
+                - paragraph [ref=e841] [cursor=pointer]: F-102
+                - paragraph [ref=e842] [cursor=pointer]: くらげ坊(変身)
+                - paragraph [ref=e843] [cursor=pointer]: ふれんど
+            - generic [ref=e844] [cursor=pointer]:
+              - img "くらげ坊" [ref=e846] [cursor=pointer]
+              - generic [ref=e847] [cursor=pointer]:
+                - paragraph [ref=e848] [cursor=pointer]: F-016
+                - paragraph [ref=e849] [cursor=pointer]: くらげ坊
+                - paragraph [ref=e850] [cursor=pointer]: ふれんど
+            - generic [ref=e851] [cursor=pointer]:
+              - img "Ko2" [ref=e853] [cursor=pointer]
+              - generic [ref=e854] [cursor=pointer]:
+                - paragraph [ref=e855] [cursor=pointer]: F-064
+                - paragraph [ref=e856] [cursor=pointer]: Ko2
+                - paragraph [ref=e857] [cursor=pointer]: ふれんど
+            - generic [ref=e858] [cursor=pointer]:
+              - img "オーバル" [ref=e860] [cursor=pointer]
+              - generic [ref=e861] [cursor=pointer]:
+                - paragraph [ref=e862] [cursor=pointer]: F-101
+                - paragraph [ref=e863] [cursor=pointer]: オーバル
+                - paragraph [ref=e864] [cursor=pointer]: ふれんど
+            - generic [ref=e865] [cursor=pointer]:
+              - img "しもん" [ref=e867] [cursor=pointer]
+              - generic [ref=e868] [cursor=pointer]:
+                - paragraph [ref=e869] [cursor=pointer]: F-032
+                - paragraph [ref=e870] [cursor=pointer]: しもん
+                - paragraph [ref=e871] [cursor=pointer]: ふれんど
+            - generic [ref=e872] [cursor=pointer]:
+              - img "ハヤオ" [ref=e874] [cursor=pointer]
+              - generic [ref=e875] [cursor=pointer]:
+                - paragraph [ref=e876] [cursor=pointer]: F-048
+                - paragraph [ref=e877] [cursor=pointer]: ハヤオ
+                - paragraph [ref=e878] [cursor=pointer]: ふれんど
+            - generic [ref=e879] [cursor=pointer]:
+              - img "ブルードラゴン飛連蹴" [ref=e881] [cursor=pointer]
+              - generic [ref=e882] [cursor=pointer]:
+                - paragraph [ref=e883] [cursor=pointer]: F-070
+                - paragraph [ref=e884] [cursor=pointer]: ブルードラゴン飛連蹴
+                - paragraph [ref=e885] [cursor=pointer]: サポート
+            - generic [ref=e886] [cursor=pointer]:
+              - img "ヘッドバット" [ref=e888] [cursor=pointer]
+              - generic [ref=e889] [cursor=pointer]:
+                - paragraph [ref=e890] [cursor=pointer]: F-076
+                - paragraph [ref=e891] [cursor=pointer]: ヘッドバット
+                - paragraph [ref=e892] [cursor=pointer]: サポート
+            - generic [ref=e893] [cursor=pointer]:
+              - img "絶対否定領域" [ref=e895] [cursor=pointer]
+              - generic [ref=e896] [cursor=pointer]:
+                - paragraph [ref=e897] [cursor=pointer]: F-082
+                - paragraph [ref=e898] [cursor=pointer]: 絶対否定領域
+                - paragraph [ref=e899] [cursor=pointer]: サポート
+            - generic [ref=e900] [cursor=pointer]:
+              - img "熱風破砕掌" [ref=e902] [cursor=pointer]
+              - generic [ref=e903] [cursor=pointer]:
+                - paragraph [ref=e904] [cursor=pointer]: F-087
+                - paragraph [ref=e905] [cursor=pointer]: 熱風破砕掌
+                - paragraph [ref=e906] [cursor=pointer]: サポート
+            - generic [ref=e907] [cursor=pointer]:
+              - img "くらげ坊(変身)" [ref=e909] [cursor=pointer]
+              - generic [ref=e910] [cursor=pointer]:
+                - paragraph [ref=e911] [cursor=pointer]: F-102
+                - paragraph [ref=e912] [cursor=pointer]: くらげ坊(変身)
+                - paragraph [ref=e913] [cursor=pointer]: ふれんど
+  - alert [ref=e914]
+```

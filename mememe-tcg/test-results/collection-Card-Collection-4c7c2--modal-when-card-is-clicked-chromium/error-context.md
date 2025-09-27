@@ -1,0 +1,222 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8] [cursor=pointer]
+  - navigation [ref=e11]:
+    - generic [ref=e13]:
+      - link "めめめのくらげ TCG" [ref=e15] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e16]:
+        - link "カードコレクション" [ref=e17] [cursor=pointer]:
+          - /url: /collection/
+        - link "デッキビルダー" [ref=e18] [cursor=pointer]:
+          - /url: /deck-builder/
+        - link "対戦" [ref=e19] [cursor=pointer]:
+          - /url: /game/
+  - main [ref=e20]:
+    - generic [ref=e21]:
+      - heading "カードコレクション" [level=1] [ref=e22]
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - textbox "カード名・番号で検索..." [ref=e25]
+          - combobox [ref=e26]:
+            - option "すべてのタイプ" [selected]
+            - option "ふれんど"
+            - option "サポート"
+            - option "フィールド"
+          - combobox [ref=e27]:
+            - option "すべての色" [selected]
+            - option "赤"
+            - option "青"
+            - option "緑"
+            - option "黄"
+            - option "紫"
+            - option "無色"
+        - generic [ref=e28]: 124枚のカードが見つかりました
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31] [cursor=pointer]:
+            - img "るくそー" [ref=e33] [cursor=pointer]
+            - generic [ref=e34] [cursor=pointer]:
+              - paragraph [ref=e35] [cursor=pointer]: F-013 (P)
+              - paragraph [ref=e36] [cursor=pointer]: るくそー
+              - paragraph [ref=e37] [cursor=pointer]: ふれんど
+          - generic [ref=e38] [cursor=pointer]:
+            - img "ティラノちゃん" [ref=e40] [cursor=pointer]
+            - generic [ref=e41] [cursor=pointer]:
+              - paragraph [ref=e42] [cursor=pointer]: F-015 (P)
+              - paragraph [ref=e43] [cursor=pointer]: ティラノちゃん
+              - paragraph [ref=e44] [cursor=pointer]: ふれんど
+          - generic [ref=e45] [cursor=pointer]:
+            - img "くらげ坊" [ref=e47] [cursor=pointer]
+            - generic [ref=e48] [cursor=pointer]:
+              - paragraph [ref=e49] [cursor=pointer]: F-016 (P)
+              - paragraph [ref=e50] [cursor=pointer]: くらげ坊
+              - paragraph [ref=e51] [cursor=pointer]: ふれんど
+          - generic [ref=e52] [cursor=pointer]:
+            - img "ユピ" [ref=e54] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]:
+              - paragraph [ref=e56] [cursor=pointer]: F-023 (P)
+              - paragraph [ref=e57] [cursor=pointer]: ユピ
+              - paragraph [ref=e58] [cursor=pointer]: ふれんど
+          - generic [ref=e59] [cursor=pointer]:
+            - img "しもん" [ref=e61] [cursor=pointer]
+            - generic [ref=e62] [cursor=pointer]:
+              - paragraph [ref=e63] [cursor=pointer]: F-025 (P)
+              - paragraph [ref=e64] [cursor=pointer]: しもん
+              - paragraph [ref=e65] [cursor=pointer]: ふれんど
+          - generic [ref=e66] [cursor=pointer]:
+            - img "メガロッコ" [ref=e68] [cursor=pointer]
+            - generic [ref=e69] [cursor=pointer]:
+              - paragraph [ref=e70] [cursor=pointer]: F-034 (P)
+              - paragraph [ref=e71] [cursor=pointer]: メガロッコ
+              - paragraph [ref=e72] [cursor=pointer]: ふれんど
+          - generic [ref=e73] [cursor=pointer]:
+            - img "ハヤオ" [ref=e75] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]:
+              - paragraph [ref=e77] [cursor=pointer]: F-041 (P)
+              - paragraph [ref=e78] [cursor=pointer]: ハヤオ
+              - paragraph [ref=e79] [cursor=pointer]: ふれんど
+          - generic [ref=e80] [cursor=pointer]:
+            - img "うっきー" [ref=e82] [cursor=pointer]
+            - generic [ref=e83] [cursor=pointer]:
+              - paragraph [ref=e84] [cursor=pointer]: F-042 (P)
+              - paragraph [ref=e85] [cursor=pointer]: うっきー
+              - paragraph [ref=e86] [cursor=pointer]: ふれんど
+          - generic [ref=e87] [cursor=pointer]:
+            - img "Ko2" [ref=e89] [cursor=pointer]
+            - generic [ref=e90] [cursor=pointer]:
+              - paragraph [ref=e91] [cursor=pointer]: F-055 (P)
+              - paragraph [ref=e92] [cursor=pointer]: Ko2
+              - paragraph [ref=e93] [cursor=pointer]: ふれんど
+          - generic [ref=e94] [cursor=pointer]:
+            - img "シーラン" [ref=e96] [cursor=pointer]
+            - generic [ref=e97] [cursor=pointer]:
+              - paragraph [ref=e98] [cursor=pointer]: F-056 (P)
+              - paragraph [ref=e99] [cursor=pointer]: シーラン
+              - paragraph [ref=e100] [cursor=pointer]: ふれんど
+          - generic [ref=e101] [cursor=pointer]:
+            - img "正志とくらげ坊" [ref=e103] [cursor=pointer]
+            - generic [ref=e104] [cursor=pointer]:
+              - paragraph [ref=e105] [cursor=pointer]: F-066 (P)
+              - paragraph [ref=e106] [cursor=pointer]: 正志とくらげ坊
+              - paragraph [ref=e107] [cursor=pointer]: サポート
+          - generic [ref=e108] [cursor=pointer]:
+            - img "謎の四人衆" [ref=e110] [cursor=pointer]
+            - generic [ref=e111] [cursor=pointer]:
+              - paragraph [ref=e112] [cursor=pointer]: F-080 (P)
+              - paragraph [ref=e113] [cursor=pointer]: 謎の四人衆
+              - paragraph [ref=e114] [cursor=pointer]: サポート
+          - generic [ref=e115] [cursor=pointer]:
+            - img "バードン" [ref=e117] [cursor=pointer]
+            - generic [ref=e118] [cursor=pointer]:
+              - paragraph [ref=e119] [cursor=pointer]: F-001
+              - paragraph [ref=e120] [cursor=pointer]: バードン
+              - paragraph [ref=e121] [cursor=pointer]: ふれんど
+          - generic [ref=e122] [cursor=pointer]:
+            - img "なみだぶくろん" [ref=e124] [cursor=pointer]
+            - generic [ref=e125] [cursor=pointer]:
+              - paragraph [ref=e126] [cursor=pointer]: F-002
+              - paragraph [ref=e127] [cursor=pointer]: なみだぶくろん
+              - paragraph [ref=e128] [cursor=pointer]: ふれんど
+          - generic [ref=e129] [cursor=pointer]:
+            - img "フラフラ" [ref=e131] [cursor=pointer]
+            - generic [ref=e132] [cursor=pointer]:
+              - paragraph [ref=e133] [cursor=pointer]: F-003
+              - paragraph [ref=e134] [cursor=pointer]: フラフラ
+              - paragraph [ref=e135] [cursor=pointer]: ふれんど
+          - generic [ref=e136] [cursor=pointer]:
+            - img "ハシルシト" [ref=e138] [cursor=pointer]
+            - generic [ref=e139] [cursor=pointer]:
+              - paragraph [ref=e140] [cursor=pointer]: F-004
+              - paragraph [ref=e141] [cursor=pointer]: ハシルシト
+              - paragraph [ref=e142] [cursor=pointer]: ふれんど
+          - generic [ref=e143] [cursor=pointer]:
+            - img "かうちゃん" [ref=e145] [cursor=pointer]
+            - generic [ref=e146] [cursor=pointer]:
+              - paragraph [ref=e147] [cursor=pointer]: F-005
+              - paragraph [ref=e148] [cursor=pointer]: かうちゃん
+              - paragraph [ref=e149] [cursor=pointer]: ふれんど
+          - generic [ref=e150] [cursor=pointer]:
+            - img "ヒヤケラトプス" [ref=e152] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]:
+              - paragraph [ref=e154] [cursor=pointer]: F-006
+              - paragraph [ref=e155] [cursor=pointer]: ヒヤケラトプス
+              - paragraph [ref=e156] [cursor=pointer]: ふれんど
+          - generic [ref=e157] [cursor=pointer]:
+            - img "るくそー" [ref=e159] [cursor=pointer]
+            - generic [ref=e160] [cursor=pointer]:
+              - paragraph [ref=e161] [cursor=pointer]: F-007
+              - paragraph [ref=e162] [cursor=pointer]: るくそー
+              - paragraph [ref=e163] [cursor=pointer]: ふれんど
+          - generic [ref=e164] [cursor=pointer]:
+            - img "ボーイ" [ref=e166] [cursor=pointer]
+            - generic [ref=e167] [cursor=pointer]:
+              - paragraph [ref=e168] [cursor=pointer]: F-008
+              - paragraph [ref=e169] [cursor=pointer]: ボーイ
+              - paragraph [ref=e170] [cursor=pointer]: ふれんど
+          - generic [ref=e171] [cursor=pointer]:
+            - img "八つ目" [ref=e173] [cursor=pointer]
+            - generic [ref=e174] [cursor=pointer]:
+              - paragraph [ref=e175] [cursor=pointer]: F-009
+              - paragraph [ref=e176] [cursor=pointer]: 八つ目
+              - paragraph [ref=e177] [cursor=pointer]: ふれんど
+          - generic [ref=e178] [cursor=pointer]:
+            - img "ブロントくん" [ref=e180] [cursor=pointer]
+            - generic [ref=e181] [cursor=pointer]:
+              - paragraph [ref=e182] [cursor=pointer]: F-010
+              - paragraph [ref=e183] [cursor=pointer]: ブロントくん
+              - paragraph [ref=e184] [cursor=pointer]: ふれんど
+          - generic [ref=e185] [cursor=pointer]:
+            - img "ポチ" [ref=e187] [cursor=pointer]
+            - generic [ref=e188] [cursor=pointer]:
+              - paragraph [ref=e189] [cursor=pointer]: F-011
+              - paragraph [ref=e190] [cursor=pointer]: ポチ
+              - paragraph [ref=e191] [cursor=pointer]: ふれんど
+          - generic [ref=e192] [cursor=pointer]:
+            - img "くらげ坊" [ref=e194] [cursor=pointer]
+            - generic [ref=e195] [cursor=pointer]:
+              - paragraph [ref=e196] [cursor=pointer]: F-012
+              - paragraph [ref=e197] [cursor=pointer]: くらげ坊
+              - paragraph [ref=e198] [cursor=pointer]: ふれんど
+        - button "もっと見る (24 / 124)" [ref=e201]
+      - generic [ref=e204]:
+        - img "るくそー" [ref=e206]
+        - generic [ref=e207]:
+          - heading "るくそー" [level=2] [ref=e208]
+          - generic [ref=e209]:
+            - paragraph [ref=e210]:
+              - generic [ref=e211]: "カード番号:"
+              - text: F-013 (P)
+            - paragraph [ref=e212]:
+              - generic [ref=e213]: "タイプ:"
+              - text: ふれんど
+            - paragraph [ref=e214]:
+              - generic [ref=e215]: "色:"
+              - text: 赤
+            - paragraph [ref=e216]:
+              - generic [ref=e217]: "属性:"
+              - text: 獣
+            - paragraph [ref=e218]:
+              - generic [ref=e219]: "感情:"
+              - text: 愛
+            - generic [ref=e220]:
+              - paragraph [ref=e221]:
+                - generic [ref=e222]: "コスト:"
+                - text: "4"
+              - paragraph [ref=e223]: 赤:1 青:0 黄:0 緑:0
+            - paragraph [ref=e224]:
+              - generic [ref=e225]: "パワー:"
+              - text: "5000"
+            - paragraph [ref=e226]:
+              - generic [ref=e227]: "レアリティ:"
+              - text: R
+            - generic [ref=e228]:
+              - paragraph [ref=e229]: "能力:"
+              - generic [ref=e230]: このふれんどがブロックした時、自分の負のエネルギーエリアのカード1枚を表にする。
+            - paragraph [ref=e231]: プロモカード
+          - button "閉じる" [ref=e232]
+  - alert [ref=e233]: めめめのくらげ TCG
+```

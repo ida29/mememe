@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { Card, CardType, CardColor, CardRarity, RawCardData, transformRawCardData } from '@/types/card';
+import cardsData from '@/data/cards.json';
 
 interface CardFilters {
   searchTerm: string;
@@ -67,39 +68,22 @@ export const useCardsStore = create<CardsState>((set, get) => ({
   loadCards: async () => {
     set({ isLoading: true, error: null });
     try {
-      // GitHub Pages用に絶対URLを構築
-      let url;
-      if (typeof window !== 'undefined') {
-        const { protocol, hostname, pathname } = window.location;
-        console.log('Location info:', { protocol, hostname, pathname });
+      console.log('Loading cards from static import...');
 
-        if (hostname === 'ida29.github.io' && pathname.includes('/mememe')) {
-          url = `${protocol}//${hostname}/mememe/data/mememe_cards_complete.json`;
-        } else {
-          url = '/data/mememe_cards_complete.json';
-        }
-      } else {
-        url = '/data/mememe_cards_complete.json';
-      }
-      console.log('Fetching cards from:', url);
-
-      const response = await fetch(url);
-      console.log('Fetch response:', response.status, response.statusText);
-
-      if (!response.ok) {
-        throw new Error(`カードデータの読み込みに失敗しました: ${response.status} ${response.statusText} - URL: ${url}`);
-      }
-
-      const rawCards: RawCardData[] = await response.json();
-      console.log('Raw cards loaded:', rawCards.length, rawCards[0] ? 'First card:' : 'No cards', rawCards[0]);
+      // 静的にインポートされたJSONデータを使用
+      const rawCards: RawCardData[] = cardsData as RawCardData[];
+      console.log('Cards loaded from static import:', rawCards.length);
 
       if (!Array.isArray(rawCards) || rawCards.length === 0) {
-        throw new Error(`カードデータが空またはJSON形式が正しくありません - データ: ${JSON.stringify(rawCards).substring(0, 100)}`);
+        throw new Error(`カードデータが空またはJSON形式が正しくありません`);
       }
 
       // RawCardDataをCardに変換
       const cards: Card[] = rawCards.map(transformRawCardData);
       console.log('Cards transformed:', cards.length, 'First transformed card:', cards[0]);
+
+      // 少し遅延を追加してローディング状態を見せる
+      await new Promise(resolve => setTimeout(resolve, 100));
 
       set(state => ({
         cards,

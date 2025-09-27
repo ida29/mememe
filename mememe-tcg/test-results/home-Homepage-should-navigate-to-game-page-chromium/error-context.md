@@ -24,5 +24,5 @@
           - option "デッキを選択..." [selected]
       - button "ゲーム開始" [disabled] [ref=e27]
       - paragraph [ref=e28]: ※デッキビルダーで50枚のデッキを作成してください
-  - alert [ref=e29]: めめめのくらげ TCG
+  - alert [ref=e29]
 ```

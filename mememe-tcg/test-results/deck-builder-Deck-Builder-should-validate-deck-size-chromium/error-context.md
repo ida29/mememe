@@ -1,0 +1,46 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "めめめのくらげ TCG" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e7]:
+        - link "カードコレクション" [ref=e8] [cursor=pointer]:
+          - /url: /collection/
+        - link "デッキビルダー" [ref=e9] [cursor=pointer]:
+          - /url: /deck-builder/
+        - link "対戦" [ref=e10] [cursor=pointer]:
+          - /url: /game/
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - button "← デッキ一覧に戻る" [ref=e14]
+        - heading "検証テストデッキ" [level=1] [ref=e15]
+        - generic [ref=e16]: 0/50枚
+      - generic [ref=e17]:
+        - generic [ref=e19]:
+          - heading "デッキ内容" [level=2] [ref=e20]
+          - paragraph [ref=e22]: "デッキは正確に50枚でなければなりません（現在: 0枚）"
+          - paragraph [ref=e24]: ふれんどカードが少なすぎる可能性があります
+          - paragraph [ref=e26]: カードを選択してデッキに追加してください
+        - generic [ref=e28]:
+          - heading "カード選択" [level=2] [ref=e29]
+          - generic [ref=e30]:
+            - textbox "カード名・番号で検索..." [ref=e31]
+            - combobox [ref=e32]:
+              - option "すべてのタイプ" [selected]
+              - option "ふれんど"
+              - option "サポート"
+              - option "フィールド"
+            - combobox [ref=e33]:
+              - option "すべての色" [selected]
+              - option "赤"
+              - option "青"
+              - option "緑"
+              - option "黄"
+              - option "紫"
+              - option "無色"
+  - alert [ref=e34]
+```
